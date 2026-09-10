@@ -20,10 +20,9 @@ On your birthday, I don't want to wish you only the usual things. I want to wish
 
 Keep chasing the things that make you happy. Keep that beautiful smile. And whenever life gets a little crazy, remember that you have a friend cheering for you from the sidelines.
 
-So here's to you, saumya — to another year, another chapter, and lots of new memories.
+So here's to you, Saumya — to another year, another chapter, and lots of new memories.
 
-Happy Birthday! 🎂💗
-Stay happy, keep smiling,`;
+Happy Birthday! 🎂💗`;
 
 function confetti() {
   const canvas = document.getElementById("confetti");
@@ -83,7 +82,7 @@ wishBtn.addEventListener("click",()=>{
 
 finalBtn.addEventListener("click",()=>{
   finalMessage.classList.add("show");
-  finalBtn.textContent="Happy Birthday, saumya 💗";
+  finalBtn.textContent="Happy Birthday, Saumya 💗";
   confetti();
   setTimeout(()=>finalMessage.scrollIntoView({behavior:"smooth",block:"center"}),150);
 });
