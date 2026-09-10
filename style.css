@@ -1,0 +1,127 @@
+*{box-sizing:border-box}
+:root{
+  --pink:#ff5fa2;--deep:#d83d83;--soft:#fff0f7;--cream:#fffafc;
+  --ink:#392630;--muted:#866a79;--white:#fff;
+}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;
+  background:
+    radial-gradient(circle at 15% 8%,#ffd4e7 0 7%,transparent 28%),
+    radial-gradient(circle at 90% 25%,#ffe1ef 0 8%,transparent 28%),
+    linear-gradient(135deg,#fffafd,#fff1f7 52%,#fff9fc);
+  min-height:100vh;overflow-x:hidden;
+}
+button{font-family:inherit}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.hidden{display:none!important}
+.intro{
+  min-height:100vh;display:grid;place-items:center;padding:25px;
+  position:relative;z-index:2;
+}
+.intro-card{
+  width:min(650px,100%);text-align:center;padding:65px 35px;
+  border:1px solid #fff;background:rgba(255,255,255,.72);
+  backdrop-filter:blur(20px);border-radius:38px;
+  box-shadow:0 25px 80px rgba(190,65,120,.16);
+  animation:rise .9s ease both;
+}
+@keyframes rise{from{opacity:0;transform:translateY(25px) scale(.97)}to{opacity:1;transform:none}}
+.tiny-heart{font-size:55px;color:var(--pink);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.eyebrow,.section-label{
+  text-transform:uppercase;letter-spacing:.16em;font-size:12px;
+  font-weight:700;color:var(--deep);
+}
+h1,h2,h3{margin-top:0}
+.intro h1{
+  font:clamp(48px,9vw,82px) "Pacifico",cursive;
+  color:var(--deep);line-height:1.08;margin:15px 0;
+}
+.intro-text{font-size:20px;color:var(--muted);margin:0 0 30px}
+.hint{font-size:12px;color:#a48796;margin-top:17px}
+.main-btn,.outline-btn,.music-btn{
+  border:0;border-radius:999px;padding:14px 24px;font-size:15px;
+  font-weight:700;cursor:pointer;transition:.25s ease;
+}
+.main-btn{color:#fff;background:linear-gradient(135deg,#ff6fae,#e84991);box-shadow:0 12px 28px rgba(232,73,145,.25)}
+.main-btn:hover,.outline-btn:hover,.music-btn:hover{transform:translateY(-3px)}
+.outline-btn{background:#fff;color:var(--deep);border:1px solid #ffd1e3;box-shadow:0 8px 22px rgba(180,70,120,.1)}
+#mainContent{animation:appear .8s ease both}
+@keyframes appear{from{opacity:0}to{opacity:1}}
+.hero{
+  min-height:92vh;width:min(1100px,calc(100% - 32px));margin:auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:70px 0;
+}
+.pill{
+  display:inline-block;background:#fff;padding:9px 14px;border-radius:999px;
+  color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.08em;
+  box-shadow:0 8px 25px rgba(180,60,110,.08);
+}
+.hero h2{font:clamp(48px,7vw,86px) "Berkshire Swash",cursive;line-height:1.05;color:#49323e;margin:22px 0}
+.hero h2 span{color:var(--deep)}
+.hero-copy>p{font-size:18px;line-height:1.8;color:var(--muted);max-width:520px;margin-bottom:28px}
+.portrait-card{position:relative;width:min(440px,90%);justify-self:center}
+.portrait{
+  position:relative;z-index:2;padding:10px;background:#fff;border-radius:45% 45% 42% 42%;
+  transform:rotate(3deg);box-shadow:0 30px 70px rgba(150,45,95,.2);
+}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 45%;border-radius:40% 40% 38% 38%}
+.halo{position:absolute;inset:-18px -20px 15px 5px;background:#ffd2e5;border-radius:50%;transform:rotate(-8deg)}
+.sticker{position:absolute;z-index:4;background:#fff;border-radius:50%;width:58px;height:58px;display:grid;place-items:center;box-shadow:0 10px 25px rgba(100,30,70,.12);font-size:25px}
+.sticker-one{top:4%;right:-2%}.sticker-two{bottom:13%;left:-8%}.sticker-three{bottom:2%;right:7%}
+section:not(.hero){width:min(930px,calc(100% - 32px));margin:0 auto 90px}
+.letter-section{text-align:center}
+.letter{
+  margin-top:25px;text-align:left;background:#fffdfb;border-radius:8px;
+  padding:clamp(28px,6vw,60px);box-shadow:0 25px 70px rgba(110,60,80,.12);
+  position:relative;border-top:6px solid #ff9fc4;
+}
+.letter:before{content:"";position:absolute;inset:14px;border:1px dashed #f3c2d5;border-radius:4px;pointer-events:none}
+.letter-top,.signature{display:flex;justify-content:space-between;position:relative;z-index:1}
+.letter-top{font:24px "Pacifico",cursive;color:var(--deep)}
+.typewriter{position:relative;z-index:1;min-height:300px;font-size:17px;line-height:2;margin:28px 0;color:#59424d;white-space:pre-line}
+.signature{flex-direction:column;gap:3px;color:var(--muted);position:relative;z-index:1}
+.signature strong{color:var(--deep)}
+.wish-card,.music-card,.final-card{
+  background:rgba(255,255,255,.78);border:1px solid #fff;border-radius:30px;
+  padding:45px;box-shadow:0 20px 60px rgba(130,50,90,.1);
+}
+.wish-card{text-align:center}.cake{font-size:60px;margin-bottom:10px}
+.wish-card h3,.music-card h3,.final-card h3{font-size:28px;color:#4a3440}
+.wish-card p,.final-card p{color:var(--muted);line-height:1.9;font-size:16px;max-width:680px;margin:0 auto 25px}
+.music-card{display:flex;align-items:center;gap:30px}
+.record{
+  flex:0 0 125px;width:125px;height:125px;border-radius:50%;
+  background:repeating-radial-gradient(circle,#242424 0 3px,#383838 4px 7px);
+  display:grid;place-items:center;box-shadow:0 12px 30px #0002;animation:spin 5s linear infinite;animation-play-state:paused;
+}
+.record.playing{animation-play-state:running}
+.record span{width:38px;height:38px;background:var(--pink);color:white;border-radius:50%;display:grid;place-items:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.music-card>div:last-child{flex:1}
+.music-note{font-size:13px;color:var(--muted)}
+.music-controls{display:flex;align-items:center;gap:18px}
+.music-btn{background:#fff0f7;color:var(--deep)}
+#volume{accent-color:var(--pink);width:140px}
+.final-card{text-align:center}
+.big-heart{font-size:60px;color:var(--pink);display:block;animation:pulse 1.7s infinite}
+.final-message{
+  display:none;margin:25px auto 0;padding:25px;background:#fff0f7;border-radius:20px;
+  color:var(--deep);animation:pop .5s ease both;
+}
+.final-message.show{display:flex;flex-direction:column;gap:8px}
+.final-message span{font-size:30px}.final-message small{color:var(--muted);font-size:14px}
+@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+footer{text-align:center;color:#a27d90;padding:0 15px 45px}
+.background-hearts span{position:fixed;z-index:0;bottom:-30px;color:#ff9bc2;opacity:.35;animation:float linear infinite;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:750px){
+  .hero{grid-template-columns:1fr;gap:45px;text-align:center;padding-top:45px}
+  .hero-copy>p{margin-left:auto;margin-right:auto}
+  .portrait-card{width:min(360px,88%)}
+  .music-card{flex-direction:column;text-align:center}
+  .music-controls{justify-content:center}
+  .wish-card,.music-card,.final-card{padding:30px 22px}
+  .typewriter{min-height:380px}
+}

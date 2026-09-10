@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Soumya 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-hearts" aria-hidden="true"></div>
+  <canvas id="confetti"></canvas>
+
+  <section class="intro" id="intro">
+    <div class="intro-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">A little surprise for someone special</p>
+      <h1>Hey, Soumya! <span>💗</span></h1>
+      <p class="intro-text">I made something just for you...</p>
+      <button class="main-btn" id="openBtn">Open your surprise ✨</button>
+      <p class="hint">Turn your sound on 🎵</p>
+    </div>
+  </section>
+
+  <main id="mainContent" class="hidden">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="pill">HAPPY BIRTHDAY 🎂</span>
+        <h2>Happy Birthday,<br><span>Soumya</span> 💕</h2>
+        <p>
+          Today deserves a little extra sparkle because it's the birthday
+          of one of the sweetest friends I know.
+        </p>
+        <button class="outline-btn" id="letterBtn">Read your letter 💌</button>
+      </div>
+
+      <div class="portrait-card">
+        <div class="halo"></div>
+        <div class="portrait">
+          <img src="images/soumya.jpg" alt="Soumya">
+        </div>
+        <div class="sticker sticker-one">✨</div>
+        <div class="sticker sticker-two">🌸</div>
+        <div class="sticker sticker-three">💗</div>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter">
+      <div class="section-label">A letter from me to you</div>
+      <div class="letter">
+        <div class="letter-top">
+          <span>Dear Soumya,</span>
+          <span>♡</span>
+        </div>
+
+        <div class="typewriter" id="letterText"></div>
+
+        <div class="signature">
+          <span>Stay happy, keep smiling,</span>
+          <strong>Your friend Abhishek💗</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="wish-section">
+      <div class="wish-card">
+        <div class="cake">🎂</div>
+        <h3>One birthday wish for you</h3>
+        <p>
+          May this year bring you countless reasons to smile,
+          beautiful memories, good people, exciting adventures,
+          and everything you've been wishing for. ✨
+        </p>
+        <button class="main-btn" id="wishBtn">Make a wish ✨</button>
+      </div>
+    </section>
+
+    <section class="music-section">
+      <div class="music-card">
+        <div class="record" id="record"><span>♥</span></div>
+        <div>
+          <p class="section-label">Your birthday soundtrack with my Voice</p>
+          <h3>Press play when you're ready 🎵</h3>
+          <p class="music-note" id="musicNote">
+            Put your song at <b>music/birthday.mp3</b>
+          </p>
+          <audio id="music" src="music/birthday.mp3"></audio>
+          <div class="music-controls">
+            <button class="music-btn" id="playBtn">▶ Play</button>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-card">
+        <span class="big-heart">♥</span>
+        <h3>And one last thing...</h3>
+        <p>Thank you for being you, Soumya. 
+          Some friendships make ordinary days feel a little brighter. 
+          I hope this birthday gives you the same happiness you bring to the people around you.
+        </p>
+        <button class="main-btn" id="finalBtn">One more surprise 🎀</button>
+        <div class="final-message" id="finalMessage">
+          <span>🎉</span>
+          <b>Happy Birthday, Soumya!</b>
+          <small>Here's to many more laughs, memories and crazy conversations. 💕</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="hidden-footer">Made with 💗 for Soumya</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
