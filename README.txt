@@ -1,10 +1,10 @@
-saumya BIRTHDAY WEBSITE — CUSTOMIZATION
+Saumya BIRTHDAY WEBSITE — CUSTOMIZATION
 
 FILES
 - index.html  = page structure/content
 - style.css   = all design, colors, layout and animations
 - script.js   = interactions, letter typing, music, confetti
-- images/saumya.jpg = the supplied photo
+- images/Saumya.jpg = the supplied photo
 - music/birthday.mp3 = add your own song here
 
 MUSIC
@@ -17,6 +17,6 @@ CUSTOM TEXT
 Open script.js and edit the `letter` text to change the friendship letter.
 
 PHOTO
-Replace images/saumya.jpg with another image using the same filename.
+Replace images/Saumya.jpg with another image using the same filename.
 
 The website works locally without a server.
